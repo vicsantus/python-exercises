@@ -10,4 +10,4 @@ def factorial(n):
 
 if __name__ == "__main__":
     # Teste da função: calcula o fatorial de 10 e imprime o resultado
-    print(factorial(10))
+    print(factorial(int(input("Enter the number you want to factorial: "))))

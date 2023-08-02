@@ -22,6 +22,7 @@ def vowels_counter(pattern_word: str):
         return vowels_counter(word[1:])
 
 
-word = input("Enter a word: ")
-count = vowels_counter(word)
-print(f"The word '{word}' contains {count} vowels.")
+if __name__ == "__main__":
+    word = input("Enter a word: ")
+    count = vowels_counter(word)
+    print(f"The word '{word}' contains {count} vowels.")
