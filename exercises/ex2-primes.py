@@ -44,4 +44,3 @@ def ten_primes(n=10):
 
 if __name__ == "__main__":
     print(ten_primes())
-    print(is_prime(999999000001))
