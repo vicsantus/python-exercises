@@ -5,8 +5,7 @@ class average():
         self.ask_for_grades()
 
     def calc_average(self):
-        total_notas = sum(self.__grades)
-        media = total_notas / len(self.__grades)
+        media = sum(self.__grades) / len(self.__grades)
         return media
 
     def ask_for_grades(self):
