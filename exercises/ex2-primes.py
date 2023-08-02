@@ -1,11 +1,10 @@
 import random
 
+
 # Função para verificar se um número é primo usando
 # o Teste de Primalidade de Fermat.
 # Recebe o número n como entrada e um parâmetro opcional k (número de testes).
 # Retorna True se o número for provavelmente primo e False caso contrário.
-
-
 def is_prime(n, k=5):
     if n <= 1:
         return False
@@ -28,12 +27,11 @@ def is_prime(n, k=5):
 
     return True
 
+
 # Função para gerar os primeiros "n" números primos.
 # Recebe o parâmetro opcional "n" que define a quantidade de
 # números primos a gerar (padrão é 10).
 # Retorna uma lista com os primeiros "n" números primos.
-
-
 def ten_primes(n=10):
     primes = []
     num = 2

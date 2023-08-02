@@ -17,31 +17,32 @@ class calculator:
                 return self.__num1 * self.__num2
             case "/":
                 if self.__num2 == 0:
-                    raise ZeroDivisionError("Não é possivel dividir por zero.")
+                    raise ZeroDivisionError(
+                        "It is not possible to divide by zero.")
                 return self.__num1 / self.__num2
             case _:
-                raise TypeError(f"Operador '{self.___operator}' inválido")
+                raise TypeError(f"Invalid '{self.___operator}' operator")
 
     def checkTypeNum(self, n: str) -> float:
         try:
             number = float(n)
             return number
         except ValueError:
-            raise TypeError("Elemento digitado não é um número válido.")
+            raise TypeError("Element entered is not a valid number.")
 
     def make(self):
-        n1 = input("Digite o primeiro número: ")
+        n1 = input("Enter the first number: ")
         self.__num1 = self.checkTypeNum(n1)
 
-        n2 = input("Digite o segundo número: ")
+        n2 = input("Enter the second number: ")
         self.__num2 = self.checkTypeNum(n2)
 
-        oper = input("Digite o operador matemático (+, -, *, /): ")
+        oper = input("Enter the math operator (+, -, *, /): ")
         self.___operator = oper
 
         self.__result = self.calc()
 
-        print(f"Resultado: {self.__result}")
+        print(f"Result: {self.__result}")
         return self.__result
 
 
